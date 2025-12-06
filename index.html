@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- مكتبة معالجة ملفات Excel -->
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=BkNWrm1BJyhWCOhJ6q8IX3Q9Ld4cp69aRHql9cIRgPHVM6rUb82gb35X57BQSL57sBsHL5tfolNk6ulxoaQoEdbW4csdAj2AfLE-2d_Q-OYUeAAl_9rWCtmGlTsFBx-TKE6NgmJEDyfgH3XzdEmIlPAo801OyeNMs47DE8LdjNzvHT_bOdpCaRrFYoEXkv8lO-e3v8udBXxYPBekPP9QuSo8rKUEdhsYEUJUxD_QVSODkBJ5C4G1F_ZbPDJR_OvjaIJLLXX80HxK1uP8eX-P3HRzV6jjEu2DNYQMctf1PlhA1N3bzEys25HRxR7GRYVvC7BxIvtoUBubI8TBWe_Q9WineAzYrq6IuXXBSJXhYbnrnEVguSMUhGRn1VmPL8PxGaJxWUgoaF_KwHDSFAbyJlqy0NS3iNeGYriKnL1S8jCL17WsHAt3v9Uq46j26ERgpYCSabRy5RGAtFZ1KBgOLrTXPhk4y5mx3BNxPm7tsf53pFsYUwWSqohRdkDcCCY0l5ovHMN-wMig4Ieez_t5Xnt9_lS6Q8ruRqMHLs1A3Tbl87rW1f-oOugHp1S3H0WFxiZt2Xqq24c-E8BMfZYvrFau4sbrdf-goL-OheHpSqqFXB9XiGTPsjKZsvBuMFT-HEoo5d4GA0NZJWkw7fytQFNHH71Pi3TxbH5NTCZR1M08YtRFoUcID2pcV_S0qzcjymLFNSnXcIMow-34v0_kt34LiJneKE7pGDGYESzFz5iSc_3Zru7aSFaibsGuOmGTMKPdTtamg7tTrk7-iATW6XnzvJR4g70phVT59yWz36WJ5c624GqasILjqdIq3Fho" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zcnYxODAzLWZpbGVzLmhzdGdyLmlvL2M3MDFjOTJkZmQ3YTg3ODUvYXBpL3Jhdy9wdWJsaWNfaHRtbC9haS9jaGF0Ym94Lmh0bWw_YXV0aD1leUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlJanA3SW1sa0lqb3hMQ0pzYjJOaGJHVWlPaUpoY2w5QlVpSXNJblpwWlhkTmIyUmxJam9pYkdsemRDSXNJbk5wYm1kc1pVTnNhV05ySWpwbVlXeHpaU3dpY0dWeWJTSTZleUpoWkcxcGJpSTZabUZzYzJVc0ltVjRaV04xZEdVaU9tWmhiSE5sTENKamNtVmhkR1VpT25SeWRXVXNJbkpsYm1GdFpTSTZkSEoxWlN3aWJXOWthV1o1SWpwMGNuVmxMQ0prWld4bGRHVWlPblJ5ZFdVc0luTm9ZWEpsSWpwbVlXeHpaU3dpWkc5M2JteHZZV1FpT25SeWRXVjlMQ0pqYjIxdFlXNWtjeUk2VzEwc0lteHZZMnRRWVhOemQyOXlaQ0k2ZEhKMVpTd2lhR2xrWlVSdmRHWnBiR1Z6SWpwbVlXeHpaU3dpWkdGMFpVWnZjbTFoZENJNlptRnNjMlY5TENKcGMzTWlPaUpHYVd4bElFSnliM2R6WlhJaUxDSmxlSEFpT2pFM05qUTROREEzTnpjc0ltbGhkQ0k2TVRjMk5EZ3pNelUzTjMwLkFsVXA2Q0wtNXNva1Jpd01iZU44TVM4YTd2LTFGRXBmX0FuX0xtTE9jTUUm"/><script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
     <style>
         :root {
             --primary: #6366f1;
+            --primary-rgb: 99, 102, 241; /* Added for rgba usage in disclaimer */
             --secondary: #4f46e5;
             --bg-dark: #0f172a;
             --bg-card: #1e293b;
@@ -53,7 +54,7 @@
         /* المحتوى الرئيسي */
         .main-content { margin-right: 260px; width: calc(100% - 260px); padding: 30px; }
 
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px; }
         .btn-main {
             background: var(--primary); color: white; border: none; padding: 10px 20px;
             border-radius: 10px; cursor: pointer; font-weight: 700; transition: 0.3s;
@@ -152,6 +153,13 @@
             <div>
                 <h2>لوحة التحكم</h2>
                 <p style="color:var(--text-muted)">إدارة البوتات والتدريب الذكي وربط البيانات</p>
+                <!-- Disclaimer for client-side execution -->
+                <div style="background: rgba(var(--primary-rgb), 0.1); border-right: 4px solid var(--primary); padding: 10px 15px; border-radius: 8px; margin-top: 15px; font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-circle-info" style="color:var(--primary); font-size: 1.1rem; flex-shrink: 0;"></i>
+                    <p>
+                        <span style="font-weight: 500;">ملاحظة هامة:</span> تعمل البوتات في هذه الصفحة طالما الصفحة مفتوحة في متصفحك. لإبقاء البوتات تعمل بشكل دائم (24/7) حتى بعد إغلاق المتصفح، ستحتاج إلى استضافة البوتات على خادم (Server-side application).
+                    </p>
+                </div>
             </div>
             <button class="btn-main" onclick="openModal('addModal')"><i class="fa-solid fa-plus"></i> إنشاء بوت جديد</button>
         </div>
@@ -209,7 +217,7 @@
                 <div class="upload-box" onclick="document.getElementById('excelInput').click()">
                     <i class="fa-solid fa-file-excel"></i>
                     <p>اضغط هنا لرفع ملف Excel</p>
-                    <span style="font-size:0.8rem; color:#94a3b8">(.xlsx, .csv) سيقوم البوت بقراءة الجدول والإجابة منه</span>
+                    <span style="font-size:0.8rem; color:#94a3b8">(.xlsx, .xls, .csv) سيقوم البوت بقراءة الجدول والإجابة منه</span>
                 </div>
                 <input type="file" id="excelInput" hidden accept=".xlsx, .xls, .csv" onchange="handleFileUpload(this)">
                 
@@ -244,36 +252,39 @@
     <!-- ================= LOGIC ================= -->
     <script>
         // --- البيانات والحالة ---
+        // يتم تحميل بيانات البوتات من التخزين المحلي للمتصفح (localStorage)
         let bots = JSON.parse(localStorage.getItem('bochat_pro_db') || '[]');
+        // قاموس لتتبع الـ Web Workers النشطة لكل بوت
         const activeWorkers = {};
 
-        // --- عند التحميل ---
+        // --- عند تحميل الصفحة ---
         window.addEventListener('DOMContentLoaded', () => {
-            renderAddFields();
-            renderGrid();
+            renderAddFields(); // عرض حقول الإضافة الديناميكية بناءً على نوع البوت الافتراضي
+            renderGrid();      // عرض جميع البوتات المحفوظة
         });
 
-        // --- وظائف الواجهة ---
+        // --- وظائف الواجهة (Modals) ---
         function openModal(id) { document.getElementById(id).style.display = 'flex'; }
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
+        // لعرض الحقول الإضافية في نموذج إضافة بوت جديد بناءً على نوع البوت المحدد
         function renderAddFields() {
             const type = document.getElementById('botType').value;
             const container = document.getElementById('addDynamicFields');
-            container.innerHTML = '';
+            container.innerHTML = ''; // تفريغ الحقول السابقة
 
             let html = '';
             if (type === 'telegram') {
-                html = `<div class="form-group"><label class="form-label">Token (من BotFather)</label><input type="text" id="f_token" class="form-input" placeholder="123456:ABC-DEF..."></div>`;
+                html = `<div class="form-group"><label class="form-label">Token (من BotFather)</label><input type="text" id="f_token" class="form-input" placeholder="مثال: 123456:ABC-DEF..."></div>`;
             } else if (type === 'gmail') {
                 html = `
-                    <div class="form-group"><label class="form-label">Telegram Token (لاستقبال المحادثات)</label><input type="text" id="f_token" class="form-input"></div>
+                    <div class="form-group"><label class="form-label">Telegram Token (لاستقبال المحادثات)</label><input type="text" id="f_token" class="form-input" placeholder="توكن بوت التيليجرام"></div>
                     <div class="form-group"><label class="form-label">بريدك الإلكتروني (لتلقي الحجوزات)</label><input type="email" id="f_email" class="form-input" placeholder="example@gmail.com"></div>
                 `;
             } else if (type === 'whatsapp') {
-                html = `<div class="form-group"><label class="form-label">رقم الهاتف (Cloud API)</label><input type="text" id="f_phone" class="form-input"></div>`;
+                html = `<div class="form-group"><label class="form-label">رقم الهاتف (Cloud API)</label><input type="text" id="f_phone" class="form-input" placeholder="رقم واتساب المربوط بـ Cloud API"></div>`;
             } else if (type === 'userbot') {
-                html = `<div class="form-group"><label class="form-label">رقم الهاتف الشخصي</label><input type="text" id="f_phone" class="form-input"></div>`;
+                html = `<div class="form-group"><label class="form-label">رقم الهاتف الشخصي</label><input type="text" id="f_phone" class="form-input" placeholder="مثال: +9665xxxxxxxx"></div>`;
             }
             container.innerHTML = html;
         }
@@ -281,67 +292,96 @@
         // --- إدارة البوتات (إضافة/حذف) ---
         function saveNewBot() {
             const type = document.getElementById('botType').value;
-            const name = document.getElementById('botName').value;
-            if(!name) return alert("الاسم مطلوب");
+            const name = document.getElementById('botName').value.trim();
+
+            if (!name) {
+                return alert("يرجى إدخال اسم للبوت.");
+            }
 
             const bot = {
-                id: Date.now(),
+                id: Date.now(), // معرف فريد للبوت
                 name: name,
                 type: type,
                 active: false,
-                config: {},
+                config: {
+                    lastUpdateOffset: 0 // لحفظ آخر تحديث تم معالجته لتجنب تكرار الرسائل عند إعادة تشغيل العامل
+                },
                 training: {
                     systemPrompt: "أنت مساعد ذكي ومفيد.",
                     excelData: "" 
                 }
             };
 
-            if(type === 'telegram' || type === 'gmail') {
-                bot.config.token = document.getElementById('f_token').value;
-                if(type === 'gmail') bot.config.targetEmail = document.getElementById('f_email').value;
-            } else {
-                bot.config.phone = document.getElementById('f_phone').value;
+            // جمع بيانات الإعدادات الخاصة بنوع البوت
+            if (type === 'telegram' || type === 'gmail') {
+                const token = document.getElementById('f_token').value.trim();
+                if (!token) return alert("يرجى إدخال التوكن الخاص بالبوت.");
+                bot.config.token = token;
+                if (type === 'gmail') {
+                    const email = document.getElementById('f_email').value.trim();
+                    if (!email) return alert("يرجى إدخال البريد الإلكتروني.");
+                    bot.config.targetEmail = email;
+                }
+            } else { // whatsapp, userbot
+                const phone = document.getElementById('f_phone').value.trim();
+                if (!phone) return alert("يرجى إدخال رقم الهاتف.");
+                bot.config.phone = phone;
             }
 
             bots.push(bot);
-            saveToLocal();
+            saveToLocal(); // حفظ التغييرات في التخزين المحلي
             closeModal('addModal');
-            renderGrid();
+            document.getElementById('botName').value = ''; // مسح حقل الاسم
+            renderGrid(); // إعادة عرض الشبكة لتضمين البوت الجديد
         }
 
         function deleteBot(id) {
-            if(confirm('هل أنت متأكد من حذف البوت؟')) {
-                toggleBot(id, false); 
-                bots = bots.filter(b => b.id !== id);
-                saveToLocal();
-                renderGrid();
+            if (confirm('هل أنت متأكد من حذف هذا البوت؟ سيتم إيقافه وإزالة جميع بياناته.')) {
+                toggleBot(id, false); // إيقاف العامل المرتبط بالبوت أولاً
+                bots = bots.filter(b => b.id !== id); // إزالة البوت من القائمة
+                saveToLocal(); // حفظ التغييرات
+                renderGrid(); // إعادة عرض الشبكة
             }
         }
 
         // --- التدريب و Excel ---
         function openTrainModal(id) {
             const bot = bots.find(b => b.id === id);
+            if (!bot) return; // تأكد من وجود البوت
+
             document.getElementById('trainBotId').value = id;
-            document.getElementById('systemPrompt').value = bot.training.systemPrompt || "";
+            document.getElementById('systemPrompt').value = bot.training.systemPrompt || "أنت مساعد ذكي ومفيد.";
             document.getElementById('extractedData').value = bot.training.excelData || "";
-            document.getElementById('fileStatus').style.display = 'none';
+            document.getElementById('fileStatus').style.display = 'none'; // إخفاء حالة الرفع عند فتح المودال
             openModal('trainModal');
         }
 
         function handleFileUpload(input) {
             const file = input.files[0];
-            if(!file) return;
+            if (!file) return;
 
             const reader = new FileReader();
             reader.onload = function(e) {
-                const data = new Uint8Array(e.target.result);
-                const workbook = XLSX.read(data, {type: 'array'});
-                const firstSheetName = workbook.SheetNames[0];
-                const worksheet = workbook.Sheets[firstSheetName];
-                const csvText = XLSX.utils.sheet_to_csv(worksheet);
-                
-                document.getElementById('extractedData').value = csvText;
-                document.getElementById('fileStatus').style.display = 'block';
+                try {
+                    const data = new Uint8Array(e.target.result);
+                    const workbook = XLSX.read(data, {type: 'array'});
+                    const firstSheetName = workbook.SheetNames[0];
+                    const worksheet = workbook.Sheets[firstSheetName];
+                    const csvText = XLSX.utils.sheet_to_csv(worksheet);
+                    
+                    document.getElementById('extractedData').value = csvText;
+                    document.getElementById('fileStatus').style.display = 'block';
+                    input.value = ''; // مسح اختيار الملف لتتمكن من رفع نفس الملف مرة أخرى
+                } catch (error) {
+                    console.error("خطأ في معالجة ملف Excel:", error);
+                    alert("تعذر قراءة ملف Excel. يرجى التأكد من أنه ملف صالح.");
+                    document.getElementById('fileStatus').style.display = 'none';
+                }
+            };
+            reader.onerror = function(e) {
+                console.error("خطأ في قراءة الملف:", e);
+                alert("حدث خطأ أثناء قراءة الملف.");
+                document.getElementById('fileStatus').style.display = 'none';
             };
             reader.readAsArrayBuffer(file);
         }
@@ -349,89 +389,117 @@
         function saveTraining() {
             const id = parseInt(document.getElementById('trainBotId').value);
             const bot = bots.find(b => b.id === id);
+            if (!bot) return;
+
+            bot.training.systemPrompt = document.getElementById('systemPrompt').value.trim();
+            bot.training.excelData = document.getElementById('extractedData').value.trim();
             
-            bot.training.systemPrompt = document.getElementById('systemPrompt').value;
-            bot.training.excelData = document.getElementById('extractedData').value;
-            
-            // إعادة التشغيل لتطبيق التغييرات
-            if(bot.active) {
-                toggleBot(id, false);
-                setTimeout(() => toggleBot(id, true), 300);
+            // إعادة تشغيل البوت لتطبيق التغييرات إذا كان نشطًا
+            if (bot.active) {
+                toggleBot(id, false); // إيقاف مؤقت
+                setTimeout(() => toggleBot(id, true), 300); // إعادة تشغيل بعد فترة وجيزة
             }
 
-            saveToLocal();
+            saveToLocal(); // حفظ التغييرات
             closeModal('trainModal');
-            renderGrid();
+            renderGrid(); // تحديث عرض الشبكة
         }
 
         // --- تشغيل البوت والذكاء الاصطناعي (Worker Engine) ---
         function toggleBot(id, forceState = null) {
             const bot = bots.find(b => b.id === id);
+            if (!bot) return;
+
+            // تحديد الحالة الجديدة (تشغيل/إيقاف)
             const newState = forceState !== null ? forceState : !bot.active;
             
+            // التحقق من وجود التوكن أو الرقم قبل التشغيل
+            if (newState && (bot.type === 'telegram' || bot.type === 'gmail') && !bot.config.token) {
+                alert("لا يمكن تشغيل البوت. يرجى إدخال التوكن الخاص به أولاً.");
+                return;
+            }
+            if (newState && (bot.type === 'whatsapp' || bot.type === 'userbot') && !bot.config.phone) {
+                alert("لا يمكن تشغيل البوت. يرجى إدخال رقم الهاتف أولاً.");
+                return;
+            }
+
             bot.active = newState;
             
-            if(bot.active) {
-                if(bot.type === 'telegram' || bot.type === 'gmail') {
+            if (bot.active) {
+                if (bot.type === 'telegram' || bot.type === 'gmail') {
                     startAIWorker(bot);
                 } else {
-                    alert('تم تفعيل المحاكاة (هذا النوع يتطلب ربطاً متقدماً بسيرفر).');
+                    // الأنواع الأخرى تتطلب ربطًا حقيقيًا بسيرفر، هنا مجرد محاكاة للواجهة
+                    console.warn(`البوت من نوع ${bot.type} تم تفعيله، لكن هذا يتطلب ربطاً متقدماً بسيرفر. هنا مجرد محاكاة لزر التفعيل.`);
                 }
             } else {
                 stopWorker(bot.id);
             }
             
-            saveToLocal();
-            renderGrid();
+            saveToLocal(); // حفظ حالة التفعيل/الإيقاف
+            renderGrid(); // تحديث عرض الشبكة
         }
 
         function startAIWorker(bot) {
-            if(activeWorkers[bot.id]) return;
+            if (activeWorkers[bot.id]) {
+                console.log(`Worker for bot ${bot.id} is already running.`);
+                return; // لا تشغل Worker إذا كان يعمل بالفعل
+            }
 
-            // دمج التعليمات مع بيانات الإكسل
+            // دمج تعليمات الشخصية مع بيانات الإكسل كـ "سياق" للذكاء الاصطناعي
             let fullContext = bot.training.systemPrompt;
-            if(bot.training.excelData) {
+            if (bot.training.excelData) {
                 fullContext += `\n\n[استخدم البيانات التالية للإجابة - قاعدة المعرفة]:\n${bot.training.excelData}`;
             }
 
-            // كود العامل (Worker Code) يعمل في الخلفية
+            // كود العامل (Web Worker) الذي سيعمل في الخلفية
             const workerCode = `
-                let offset = 0;
-                const API_URL = "https://text.pollinations.ai/";
+                let offset = 0; // سيتم تحديثه بالقيمة الأولية لاحقاً
+                const API_URL = "https://text.pollinations.ai/"; // نقطة نهاية الذكاء الاصطناعي
 
+                // عند استلام رسالة من الثريد الرئيسي
                 onmessage = async (e) => {
-                    const { token, type, targetEmail, context } = e.data;
-                    
+                    const { token, type, targetEmail, context, initialOffset, botId } = e.data;
+                    offset = initialOffset || 0; // تهيئة الـ offset بآخر قيمة محفوظة
+
+                    console.log(\`[Worker ${botId}] Starting polling with offset: \${offset}\`);
+
                     const poll = async () => {
                         try {
-                            // 1. جلب الرسائل من تيليجرام
-                            const res = await fetch(\`https://api.telegram.org/bot\${token}/getUpdates?offset=\${offset+1}&timeout=5\`);
+                            // 1. جلب الرسائل من تيليجرام باستخدام getUpdates
+                            const res = await fetch(\`https://api.telegram.org/bot\${token}/getUpdates?offset=\${offset + 1}&timeout=30\`); // timeout لتقليل الاستدعاءات
+                            if (!res.ok) {
+                                throw new Error(\`Telegram API error: \${res.status} \${res.statusText}\`);
+                            }
                             const data = await res.json();
                             
-                            if(data.ok) {
-                                for(const u of data.result) {
-                                    offset = u.update_id;
-                                    if(u.message && u.message.text) {
+                            if (data.ok && data.result.length > 0) {
+                                for (const u of data.result) {
+                                    offset = u.update_id; // تحديث الـ offset لأعلى تحديث تم معالجته
+                                    
+                                    if (u.message && u.message.text) {
                                         const userText = u.message.text;
                                         const chatId = u.message.chat.id;
+                                        console.log(\`[Worker ${botId}] Received message from \${chatId}: \${userText}\`);
                                         
-                                        // 2. منطق الحجوزات (Gmail)
-                                        if(type === 'gmail' && (userText.includes('حجز') || userText.includes('booking'))) {
+                                        // 2. منطق الحجوزات (خاص بنوع Gmail)
+                                        if (type === 'gmail' && (userText.includes('حجز') || userText.includes('booking') || userText.includes('احجز'))) {
+                                            // إرسال إشعار للثريد الرئيسي لعرض toast
                                             postMessage({ 
                                                 action: 'booking', 
-                                                chatId: chatId, 
-                                                targetEmail: targetEmail 
+                                                targetEmail: targetEmail,
+                                                botId: botId
                                             });
-                                            // رد تأكيد سريع
+                                            // رد تأكيد سريع لتيليجرام
                                             await fetch(\`https://api.telegram.org/bot\${token}/sendMessage\`, {
                                                 method: 'POST',
                                                 headers: {'Content-Type': 'application/json'},
-                                                body: JSON.stringify({ chat_id: chatId, text: "📧 تم استلام طلب الحجز وتحويله عبر البريد aliatb27@gmail.com." })
+                                                body: JSON.stringify({ chat_id: chatId, text: "📧 تم استلام طلب الحجز وتحويله عبر البريد إلى aliatb27@gmail.com." })
                                             });
-                                            continue; 
+                                            continue; // انتقل للرسالة التالية
                                         }
 
-                                        // 3. منطق الذكاء الاصطناعي (AI)
+                                        // 3. منطق الذكاء الاصطناعي (AI) للرد على الرسائل الأخرى
                                         try {
                                             const aiRes = await fetch(API_URL, {
                                                 method: 'POST',
@@ -441,74 +509,108 @@
                                                         {role: 'system', content: context},
                                                         {role: 'user', content: userText}
                                                     ],
-                                                    model: 'openai',
-                                                    seed: Math.floor(Math.random() * 1000)
+                                                    model: 'openai', // يمكن تغيير النموذج هنا
+                                                    seed: Math.floor(Math.random() * 1000) // لبعض العشوائية
                                                 })
                                             });
+                                            if (!aiRes.ok) {
+                                                throw new Error(\`AI API error: \${aiRes.status} \${aiRes.statusText}\`);
+                                            }
                                             const aiText = await aiRes.text();
+                                            console.log(\`[Worker ${botId}] AI response: \${aiText}\`);
                                             
-                                            // إرسال الرد
+                                            // إرسال الرد عبر تيليجرام
                                             await fetch(\`https://api.telegram.org/bot\${token}/sendMessage\`, {
                                                 method: 'POST',
                                                 headers: {'Content-Type': 'application/json'},
                                                 body: JSON.stringify({ chat_id: chatId, text: aiText })
                                             });
 
-                                        } catch(err) { console.error(err); }
+                                        } catch(aiErr) { 
+                                            console.error(\`[Worker ${botId}] AI processing error: \`, aiErr); 
+                                            // رد خطأ للمستخدم إذا فشل الذكاء الاصطناعي
+                                            await fetch(\`https://api.telegram.org/bot\${token}/sendMessage\`, {
+                                                method: 'POST',
+                                                headers: {'Content-Type': 'application/json'},
+                                                body: JSON.stringify({ chat_id: chatId, text: "عذراً، حدث خطأ أثناء معالجة طلبك." })
+                                            });
+                                        }
                                     }
                                 }
+                                // بعد معالجة جميع التحديثات، أرسل آخر offset للثريد الرئيسي لحفظه
+                                postMessage({ action: 'updateOffset', offset: offset, botId: botId });
                             }
-                        } catch(err) {}
-                        setTimeout(poll, 1000);
+                        } catch(err) { 
+                            console.error(\`[Worker ${botId}] Polling error: \`, err); 
+                        } finally {
+                            // مهما حدث، استمر في الاستدعاء بعد فترة
+                            setTimeout(poll, 1000); // استدعاء API كل ثانية (أو حسب الحاجة)
+                        }
                     };
-                    poll();
+                    poll(); // بدء عملية الاستدعاء
                 };
             `;
 
             const blob = new Blob([workerCode], {type: 'application/javascript'});
             const worker = new Worker(URL.createObjectURL(blob));
             
+            // إرسال البيانات الأولية (توكن، نوع البوت، السياق، الـ offset) للعامل
             worker.postMessage({ 
                 token: bot.config.token, 
                 type: bot.type, 
                 targetEmail: bot.config.targetEmail,
-                context: fullContext
+                context: fullContext,
+                initialOffset: bot.config.lastUpdateOffset, // إرسال الـ offset المحفوظ
+                botId: bot.id
             });
 
+            // استقبال الرسائل من العامل
             worker.onmessage = (e) => {
-                if(e.data.action === 'booking') {
+                if (e.data.action === 'booking') {
                     showGmailToast(e.data.targetEmail);
+                } else if (e.data.action === 'updateOffset') {
+                    // تحديث الـ offset في بيانات البوت بالثريد الرئيسي وحفظها
+                    const currentBot = bots.find(b => b.id === e.data.botId);
+                    if (currentBot) {
+                        currentBot.config.lastUpdateOffset = e.data.offset;
+                        saveToLocal(); // حفظ التغييرات فوراً
+                    }
                 }
             };
 
+            // تتبع العامل النشط
             activeWorkers[bot.id] = worker;
+            console.log(`Worker for bot ${bot.name} (ID: ${bot.id}) started.`);
         }
 
         function stopWorker(id) {
-            if(activeWorkers[id]) {
-                activeWorkers[id].terminate();
-                delete activeWorkers[id];
+            if (activeWorkers[id]) {
+                activeWorkers[id].terminate(); // إيقاف العامل
+                delete activeWorkers[id]; // إزالته من القائمة
+                console.log(`Worker for bot ID ${id} stopped.`);
             }
         }
 
-        // --- العرض (Rendering) ---
+        // --- العرض (Rendering) لشبكة البوتات ---
         function renderGrid() {
             const grid = document.getElementById('botsGrid');
-            grid.innerHTML = '';
+            grid.innerHTML = ''; // تفريغ الشبكة قبل إعادة البناء
 
             bots.forEach(bot => {
                 let icon = '', typeLabel = '';
-                if(bot.type==='telegram') { icon = '<i class="fa-brands fa-telegram" style="color:#229ED9"></i>'; typeLabel='تيليجرام'; }
-                else if(bot.type==='gmail') { icon = '<i class="fa-solid fa-envelope" style="color:#EA4335"></i>'; typeLabel='حجوزات'; }
-                else if(bot.type==='whatsapp') { icon = '<i class="fa-brands fa-whatsapp" style="color:#25D366"></i>'; typeLabel='واتساب'; }
-                else { icon = '<i class="fa-solid fa-user-shield" style="color:#A855F7"></i>'; typeLabel='شخصي'; }
+                // تحديد الأيقونة والاسم بناءً على نوع البوت
+                if (bot.type === 'telegram') { icon = '<i class="fa-brands fa-telegram" style="color:#229ED9"></i>'; typeLabel='بوت تيليجرام'; }
+                else if (bot.type === 'gmail') { icon = '<i class="fa-solid fa-envelope" style="color:#EA4335"></i>'; typeLabel='بوت حجوزات (Gmail)'; }
+                else if (bot.type === 'whatsapp') { icon = '<i class="fa-brands fa-whatsapp" style="color:#25D366"></i>'; typeLabel='بوت واتساب'; }
+                else { icon = '<i class="fa-solid fa-user-shield" style="color:#A855F7"></i>'; typeLabel='بوت رقم شخصي'; }
 
                 const hasExcel = bot.training.excelData && bot.training.excelData.length > 5;
                 const isTrained = bot.training.systemPrompt && bot.training.systemPrompt.length > 10;
 
                 const card = document.createElement('div');
-                card.className = `card ${bot.active ? 'active' : ''}`;
-                
+                card.className = `card ${bot.active ? 'active' : ''}`; // تمييز البوتات النشطة
+
+                // بناء بطاقة البوت
                 card.innerHTML = `
                     <div class="card-header">
                         <div class="bot-icon">${icon}</div>
@@ -526,10 +628,10 @@
                     </div>
 
                     <div class="controls">
-                        <button class="btn-icon train" onclick="openTrainModal(${bot.id})" title="تدريب">
+                        <button class="btn-icon train" onclick="openTrainModal(${bot.id})" title="تدريب البوت وتغذية البيانات">
                             <i class="fa-solid fa-graduation-cap"></i> تدريب
                         </button>
-                        <button class="btn-icon delete" onclick="deleteBot(${bot.id})" title="حذف">
+                        <button class="btn-icon delete" onclick="deleteBot(${bot.id})" title="حذف البوت نهائياً">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
@@ -538,13 +640,15 @@
             });
         }
 
+        // عرض إشعار محاكى لوصول حجز Gmail
         function showGmailToast(email) {
             const t = document.getElementById('gmailToast');
             document.getElementById('targetEmailDisplay').innerText = email;
             t.style.display = 'block';
-            setTimeout(() => t.style.display = 'none', 5000);
+            setTimeout(() => t.style.display = 'none', 5000); // إخفاء الإشعار بعد 5 ثوانٍ
         }
 
+        // حفظ جميع بيانات البوتات إلى التخزين المحلي للمتصفح
         function saveToLocal() { localStorage.setItem('bochat_pro_db', JSON.stringify(bots)); }
     </script>
 </body>
